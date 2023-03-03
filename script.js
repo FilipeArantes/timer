@@ -33,6 +33,11 @@ const mostrarTempo = setInterval(function tempo() {
 cancelar.addEventListener('click', () => {
     clearInterval(mostrarTempo)
     clearInterval(temporizador(0, 0))
+    const minutos1 = document.querySelector('.minutos')
+    const seconds1 = document.querySelector('.segundos')
+
+    minutos1.innerHTML = '00'
+    seconds1.innerHTML = '00'
 })
 
 function pause() {
