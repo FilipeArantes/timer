@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="style/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+</head>
+
+<body>
+    <div class="circulo">
+        <span class="tempo-restante minutos">00</span>
+        <span class="doisPontos">:</span>
+        <span class="tempo-restante segundos">00</span>
+    </div>
+    <div class="corpo">
+        <div class="primeiroBotao">
+            <div tabindex="0" id="cancelar" class="cancelar">
+                <span>Cancelar</span>
+            </div>
+        </div>
+        <div class="segundoBotao">
+            <div tabindex="0" id="iniciarParar" class="iniciarParar" onclick="pause()">
+                <span>Pausar</span>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
